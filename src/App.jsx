@@ -44,7 +44,7 @@ const App = () => {
     ],
   });
 
-  const [nameInitials,setNameInitials] = ["K", "K"];
+  const [nameInitials,setNameInitials] = useState(["K", "K"]);
 
   useEffect(() => {
     console.log(id ? "id present" : "no Id Present");
@@ -67,7 +67,7 @@ const App = () => {
     //   <h2>I'm a {resumeData.title}</h2>
     //   <div>{resumeData.description}</div>
     // </div>
-    <Resume resumeData={resumeData} />
+    <Resume resumeData={resumeData} nameInitials={nameInitials} />
   );
 };
 

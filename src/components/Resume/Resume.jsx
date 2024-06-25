@@ -69,7 +69,8 @@ const resumeData = {
 
 
 
-const Resume = () => {
+const Resume = (props) => {
+    const {nameInitials} = props;
   return (
     <main className="font-jost hyphens-manual">
       <section className="p-3 my-auto mx-auto max-w-3xl bg-gray-100 rounded-2xl border-4 border-gray-700 sm:p-9 md:p-16 lg:mt-6 print:border-0 page print:max-w-letter print:max-h-letter print:mx-0 print:my-o xsm:p-8 print:bg-white md:max-w-letter md:h-letter lg:h-letter">
